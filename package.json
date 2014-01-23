@@ -1,0 +1,23 @@
+{
+  "name": "jasmine-jsonpath",
+  "version": "0.1.0",
+  "description": "A plugin for jasmine to enable jsonpath(http://goessner.net/articles/JsonPath/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abruzzi/jasmine-jsonpath.git"
+  },
+  "keywords": [
+    "jasmine",
+    "jsonpath",
+    "matcher"
+  ],
+  "author": "Juntao Qiu",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/abruzzi/jasmine-jsonpath/issues"
+  }
+}

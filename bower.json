@@ -1,0 +1,10 @@
+{
+  "name": "jasmine-jsonpath",
+  "version": "0.1.0",
+  "main": "lib/jasmine-jsonpath.js",
+  "ignore": [
+    "spec",
+    "vendor",
+    ".*"
+  ]
+}
