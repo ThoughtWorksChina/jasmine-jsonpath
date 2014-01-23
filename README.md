@@ -5,7 +5,7 @@ A Plugin for Jasmine, to enable jsonpath(http://goessner.net/articles/JsonPath/)
 
 #### Installation
 
-Download [jasmine-jsonpath](https://github.com/abruzzi/jasmine-jsonpath/lib/jasmine-jsonpath.js) from here and put it in your jasmine test runner file( typically it's your SpecRunner.html). 
+Download [jasmine-jsonpath](https://raw2.github.com/abruzzi/jasmine-jsonpath/master/lib/jasmine-jsonpath.js) from here and put it in your jasmine test runner file( typically it's your SpecRunner.html). 
 And you need [jsonpath](https://code.google.com/p/json-path/) and [json2](https://github.com/douglascrockford/JSON-js) as well.
 
 #### Methods
@@ -41,7 +41,7 @@ it("should be able to get object by path", function() {
 });
 ```
 
-[check this out]() if you want to know all details about `jsonpath`
+[check this out](http://goessner.net/articles/JsonPath/) if you want to know all details about `jsonpath`
 
 #### Matchers
 
