@@ -45,7 +45,7 @@ it("should be able to get object by path", function() {
 
 #### Matchers
 
-And also there is a matcher(for now, and I'm going to add another one)
+And also there is a matcher(for now, and I'm going to add another one) `toHasJsonPath`:
 
 ```js
 it("should be able to deteming a path is existing", function() {
@@ -54,3 +54,64 @@ it("should be able to deteming a path is existing", function() {
 });
 ```
 
+additionally, there is another more powerful(useful) matcher `toHasSchema`, consider you have a object(request will be sent to server or response from server):
+
+```js
+{
+    languages: [
+        {
+            type: "Dynamic",
+            samples: ["Ruby", "Python"]
+        },
+        {
+            type: "Static",
+            samples: ["Java", "C"]
+        },
+        {
+            type: "Dynamic",
+            samples: ["JavaScript"]
+        }
+    ],
+    tools: {
+        category: {
+            name: "Common"
+        }
+    }
+};
+```
+
+and to make sure none didnt break it and none will break it in the futher, we need to write tests to ensure it:
+
+```js
+it("should be able to tell an object has a special schema", function() {
+    var schema = {
+        languages: [
+            {
+                type: "Static",
+                samples: []
+            }
+        ]
+    };
+
+    expect(obj).toHasSchema(schema);
+});
+```
+
+Then, if someone accidently made a `typo`, say, `languages` to `longuages`, the test will fail. You can make it more complex and more specified:
+
+```js
+it("should be able to tell an object has a special schema, more complex", function() {
+    var schema = {
+        languages: [],
+        tools: {
+            category: {
+                name: "Common"
+            }
+        }
+    };
+
+    expect(obj).toHasSchema(schema);
+});
+```
+
+And that's it.
