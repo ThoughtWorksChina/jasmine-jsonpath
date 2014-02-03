@@ -45,7 +45,7 @@ it("should be able to get object by path", function() {
 
 #### Matchers
 
-And also there is a matcher(for now, and I'm going to add another one) `toHasJsonPath`:
+Matcher `toHasJsonPath` can help you to verify whether an object has a given `jsonpath` or not:
 
 ```js
 it("should be able to deteming a path is existing", function() {
@@ -54,7 +54,7 @@ it("should be able to deteming a path is existing", function() {
 });
 ```
 
-additionally, there is another more powerful(useful) matcher `toHasSchema`, consider you have a object(request will be sent to server or response from server):
+additionally, there is another more powerful(useful) matcher named `toHasSchema`, consider you have an object(request will be sent to server or response from server):
 
 ```js
 {
@@ -80,7 +80,7 @@ additionally, there is another more powerful(useful) matcher `toHasSchema`, cons
 };
 ```
 
-and to make sure none didnt break it and none will break it in the futher, we need to write tests to ensure it:
+and to make sure none didn't break the schema and none will break it in the future, we need to write tests to ensure it:
 
 ```js
 it("should be able to tell an object has a special schema", function() {
@@ -97,7 +97,7 @@ it("should be able to tell an object has a special schema", function() {
 });
 ```
 
-Then, if someone accidently made a `typo`, say, `languages` to `longuages`, the test will fail. You can make it more complex and more specified:
+Then, if someone accidently made a typo, say, `languages` to `longuages`, then the test will fail. You can make it more complex and more specified like:
 
 ```js
 it("should be able to tell an object has a special schema, more complex", function() {
