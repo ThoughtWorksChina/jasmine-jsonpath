@@ -2,9 +2,24 @@
   "name": "jasmine-jsonpath",
   "version": "0.1.0",
   "main": "lib/jasmine-jsonpath.js",
+  "keywords": [
+    "jasmine",
+    "jsonpath"
+  ],
   "ignore": [
     "spec",
     "vendor",
-    ".*"
-  ]
+    ".*",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/abruzzi/jasmine-jsonpath",
+  "authors": [
+    "Qiu Juntao <juntao.qiu@gmail.com>"
+  ],
+  "description": "A plugin for jasmine, with some handy matchers of jsonpath",
+  "license": "MIT"
 }
