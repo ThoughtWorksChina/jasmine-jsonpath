@@ -2,9 +2,11 @@
   "name": "jasmine-jsonpath",
   "version": "0.1.0",
   "description": "A plugin for jasmine to enable jsonpath(http://goessner.net/articles/JsonPath/)",
-  "main": "index.js",
+  "devDependencies": {
+      "karma": ">=0.10.8"
+  },
   "scripts": {
-    "test": "karma start"
+      "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
