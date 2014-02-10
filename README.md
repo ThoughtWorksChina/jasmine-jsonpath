@@ -1,4 +1,4 @@
-jasmine-jsonpath
+jasmine-jsonpath [![Build Status](https://travis-ci.org/abruzzi/jasmine-jsonpath.png?branch=master)](https://travis-ci.org/abruzzi/jasmine-jsonpath)
 ================
 
 A Plugin for Jasmine, to enable jsonpath(http://goessner.net/articles/JsonPath/) in matchers.
