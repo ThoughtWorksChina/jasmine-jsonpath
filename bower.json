@@ -21,5 +21,9 @@
     "Qiu Juntao <juntao.qiu@gmail.com>"
   ],
   "description": "A plugin for jasmine, with some handy matchers of jsonpath",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jsonpath": "*",
+    "json2": "*"
+  }
 }
