@@ -25,5 +25,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/abruzzi/jasmine-jsonpath/issues"
-  }
+  },
+  "main": "lib/jasmine-jsonpath.js"
 }
